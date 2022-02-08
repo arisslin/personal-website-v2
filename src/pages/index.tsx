@@ -1,11 +1,9 @@
-import * as React from "react"
+import * as React from 'react';
 
 const IndexPage = () => {
-  const output: string = "In progress...";
+  const output: string = 'In progress...';
 
-  return (
-    <main>{output}</main>
-  )
-}
+  return <main>{output}</main>;
+};
 
-export default IndexPage
+export default IndexPage;
