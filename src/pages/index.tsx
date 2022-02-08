@@ -1,8 +1,10 @@
 import * as React from "react"
 
 const IndexPage = () => {
+  const output: string = "In progress...";
+
   return (
-    <main>In Progress...</main>
+    <main>{output}</main>
   )
 }
 
