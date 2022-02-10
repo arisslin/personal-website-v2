@@ -4,7 +4,12 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['eslint:recommended', 'react-app', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'react-app',
+    'prettier',
+  ],
   globals: {
     __PATH_PREFIX__: true,
   },
