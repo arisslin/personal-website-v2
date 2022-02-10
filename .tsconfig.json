@@ -2,8 +2,8 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "esnext",
-    "jsx": "react",
-    "lib": ["dom", "es2015", "es2017"],
+    "jsx": "preserve",
+    "lib": ["dom", "esnext", "es2015", "es2017"],
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
