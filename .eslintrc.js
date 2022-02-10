@@ -7,8 +7,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'react-app',
     'plugin:react-hooks/recommended',
+    'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
   globals: {
@@ -22,7 +22,8 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+  root: true,
   settings: {
     react: {
       version: 'detect',
