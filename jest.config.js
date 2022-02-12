@@ -17,4 +17,5 @@ module.exports = {
     `node_modules/(?!(gatsby)/)`,
     '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$',
   ],
+  verbose: true,
 };

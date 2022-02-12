@@ -16,7 +16,8 @@
     "lint": "eslint -c .eslintrc.js \"src/**/*.{js,jsx,ts,tsx}\"",
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,mdx}\"",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest --watch",
+    "test:coverage": "npm run test -- --coverage"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.2",
