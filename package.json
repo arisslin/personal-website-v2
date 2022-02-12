@@ -15,9 +15,11 @@
     "clean": "gatsby clean",
     "lint": "eslint -c .eslintrc.js \"src/**/*.{js,jsx,ts,tsx}\"",
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,mdx}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest"
   },
   "dependencies": {
+    "@types/jest": "^27.4.0",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.7.1",
     "gatsby-plugin-image": "^2.7.0",
