@@ -8,6 +8,8 @@ module.exports = {
     '^gatsby-page-utils/(.*)$': `gatsby-page-utils/dist/$1`, // Workaround for https://github.com/facebook/jest/issues/9771
   },
   setupFiles: [`<rootDir>/config/jest/loadershim.js`],
+  setupFilesAfterEnv: ['<rootDir>/config/jest/setup-test-env.js'],
+  testEnvironment: 'jsdom',
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   testURL: `http://localhost`,
   transform: {
