@@ -4,7 +4,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    'storybook-addon-gatsby',
+    // 'storybook-addon-gatsby', // actually buggy, enable if works stable with storybook and webpack 5
   ],
   framework: '@storybook/react',
   core: {
