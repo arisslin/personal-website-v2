@@ -17,7 +17,9 @@
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,mdx}\"",
     "prepare": "husky install",
     "test": "jest --watch",
-    "test:coverage": "npm run test -- --coverage"
+    "test:coverage": "npm run test -- --coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@types/jest": "^27.4.0",
@@ -40,11 +42,21 @@
     "typescript": "^4.5.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "0.0.9",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",
     "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.3",
     "babel-preset-gatsby": "^2.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.28.0",
@@ -54,7 +66,8 @@
     "jest": "^27.5.1",
     "lint-staged": "^12.3.3",
     "prettier": "2.5.1",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^17.0.2",
+    "storybook-addon-gatsby": "0.0.5"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,html,css,md,mdx}": [
