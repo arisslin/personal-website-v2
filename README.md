@@ -86,16 +86,54 @@ For more information read the documentation on https://www.gatsbyjs.com/docs/ref
 
 ## ESlint
 
-...follows
+`ESlint` is used for statically analyzing the code and finding problems. It scans all _\*.js,_ _\*.jsx,_ _\*.ts_ and _\*.tsx_ files in the repository. You can run the linter manually over following script:
+
+```
+npm run lint
+```
+
+`husky` and `lint-staged` are used to automate the eslint by hooks.
+There is a hook that runs before every push on all project files.
 
 ## Storybook
 
-Used for isolated developmend of React components and for documentation.
+`Storybook` is used for isolated developmend of React components and for documentation. You can start storybook with followin command from the repo:
+
+```
+npm run storybook
+```
+
+You can also run `Storybook` as a static web application. Therefore you need
+to create a build.
+
+```
+npm run build-storybook
+```
 
 ## Testing
 
-... fowllows
+For unit testing `jest` and `testing-library` is used. To run the tests start following script:
 
-## Scripts
+```
+npm run test
+```
 
-... follows
+To start testing with coverage run:
+
+```
+npm run test:coverage
+```
+
+## Prettier
+
+For formatting and prettifing code `Prettier` is used.
+It runs an all _\*.js_, _\*.jsx_, _\*.ts_, _*.tsx*_, _\*.html_, _\*.css_,
+_\*.md_ and _\*.mdx_ files.
+
+You can run it over the whole project.
+
+```
+npm run prettier
+```
+
+There is hook for `husky` with `lint-staged` that runs `Prettier` before every git commit to on staged files.
