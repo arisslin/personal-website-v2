@@ -1,56 +1,139 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Personal Website V2
 
-## 🚀 Quick start
+This is the project about the second personal website of Andreas Rissling. Here you find all information you need to develop and build the website.
 
-1.  **Create a Gatsby site.**
+## Tech stack
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+In this chapter only the main technologies of the project are listed. A detailed overview can be found in the _package.json_ file under the keys **dependencies** and **devDependencies**.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+The whole project is based on **Gatsby** and written in **TypeScript.** Some configuration files are written in **JavaScript**. The main technologies are:
 
-2.  **Start developing.**
+- [Gatsby](https://www.gatsbyjs.com/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled-components](https://styled-components.com/)
 
-    Navigate into your new site’s directory and start it up.
+To support the development process the technologies listed below are used:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- [Storybook](https://storybook.js.org/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://typicode.github.io/husky/#/)
+- [Lint staged](https://github.com/okonet/lint-staged#readme)
 
-3.  **Open the code and start customizing!**
+## Requirements and Setup
 
-    Your site is now running at http://localhost:8000!
+`npm` and `Node.js` are needed to installed on the local maschine. When is started this project i was using `npm` _v6.14.8_ and `Node.js` _v14.15.0_.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+To get started clone the repository from github to your local maschine.
 
-4.  **Learn more**
+```
+git clone git@github.com:arisslin/jsmpc.git
+```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Then switch into the repo and install the projects dependencies.
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+cd personal-website-v2
+npm i
+```
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Developing
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+For running the development server you can run following `npm` scripts in your console.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+npm start
+```
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+or
 
-    - [TypeScript Configuration](https://www.gatsbyjs.com/plugins/gatsby-plugin-typescript/)
+```
+npm run develop
+```
 
-## 🚀 Quick start (Gatsby Cloud)
+The site is now running at http://localhost:8000. You aslo find **GraphiQL**, an in-browser IDE, to explore the site's data and schema with `GraphQL` on http://localhost:8000/\_\_\_graphql
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+## Build and deploy
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+To compile the app and make it ready for deployment use following command:
+
+```
+npm run build
+```
+
+Afterwards you will find in the projects root folder a folder named `./public`. Inside this folder you find the compiled site ready for deployment.
+
+For testing the compiled site you can run a production server on your local maschine. Therefor type the command below into you console:
+
+```
+npm run serve
+```
+
+You can view the site in the browser now on http://localhost:9000/
+
+## Cleanup
+
+If the local project has issues `Gatsby` provides a clean up script.
+
+```
+npm run clean
+```
+
+For more information read the documentation on https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean
+
+## ESlint
+
+`ESlint` is used for statically analyzing the code and finding problems. It scans all _\*.js,_ _\*.jsx,_ _\*.ts_ and _\*.tsx_ files in the repository. You can run the linter manually over following script:
+
+```
+npm run lint
+```
+
+`husky` and `lint-staged` are used to automate the eslint by hooks.
+There is a hook that runs before every push on all project files.
+
+## Storybook
+
+`Storybook` is used for isolated developmend of React components and for documentation. You can start storybook with followin command from the repo:
+
+```
+npm run storybook
+```
+
+You can also run `Storybook` as a static web application. Therefore you need
+to create a build.
+
+```
+npm run build-storybook
+```
+
+## Testing
+
+For unit testing `jest` and `testing-library` is used. To run the tests start following script:
+
+```
+npm run test
+```
+
+To start testing with coverage run:
+
+```
+npm run test:coverage
+```
+
+## Prettier
+
+For formatting and prettifing code `Prettier` is used.
+It runs an all _\*.js_, _\*.jsx_, _\*.ts_, _*.tsx*_, _\*.html_, _\*.css_,
+_\*.md_ and _\*.mdx_ files.
+
+You can run it over the whole project.
+
+```
+npm run prettier
+```
+
+There is hook for `husky` with `lint-staged` that runs `Prettier` before every git commit to on staged files.
