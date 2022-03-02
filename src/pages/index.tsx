@@ -1,9 +1,15 @@
 import * as React from 'react';
+import GlobalStyles from '../common/styles/globalStyles';
 
 const IndexPage = () => {
   const output = 'In progress...';
 
-  return <main>{output}</main>;
+  return (
+    <main>
+      <GlobalStyles />
+      {output}
+    </main>
+  );
 };
 
 export default IndexPage;
