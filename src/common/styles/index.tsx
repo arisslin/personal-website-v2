@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { breakpoints } from './layout';
+import '@fontsource/open-sans/300.css';
 import '@fontsource/open-sans/400.css';
 import '@fontsource/open-sans/700.css';
 
@@ -26,6 +27,22 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--color-light);
     color: var(--color-dark);
     font-family: var(--font-family-global);
+    font-weight: 300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: 1px;
+  }
+
+  h1, 
+  h2,
+  h3 {
+    text-transform: uppercase;
   }
 
   h1 {
@@ -54,11 +71,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h6 {
-    margin: 1.125rem 0;
+    margin: 1rem 0;
     font-size: var(--font-size-base);
-  }
-
-  p {
   }
 `;
 

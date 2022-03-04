@@ -6,10 +6,81 @@ const IndexPage = () => {
     <main>
       <GlobalStyles />
       <h1>This is a headline h1!</h1>
+
+      <p>
+        Velit nulla deserunt sit non non magna amet. Enim reprehenderit ad ad
+        esse dolore Lorem occaecat aliqua magna laboris. Do deserunt velit esse
+        velit ullamco Lorem veniam cupidatat velit incididunt. Non ad laborum
+        fugiat nostrud ut sit sunt velit sint ipsum. Officia quis nulla
+        consectetur mollit ex anim.
+      </p>
+
       <h2>This is a headline h2!</h2>
+
+      <p>
+        Velit nulla deserunt sit non non magna amet. Enim reprehenderit ad ad
+        esse dolore Lorem occaecat aliqua magna laboris. Do deserunt velit esse
+        velit ullamco Lorem veniam cupidatat velit incididunt. Non ad laborum
+        fugiat nostrud ut sit sunt velit sint ipsum. Officia quis nulla
+        consectetur mollit ex anim. Minim fugiat commodo tempor aliqua sunt
+        laboris exercitation et non adipisicing excepteur velit et. Aliquip anim
+        duis et cupidatat elit quis duis exercitation quis minim dolore fugiat
+        commodo amet.
+      </p>
+
+      <p>
+        Velit nulla deserunt sit non non magna amet. Enim reprehenderit ad ad
+        esse dolore Lorem occaecat aliqua magna laboris. Do deserunt velit esse
+        velit ullamco Lorem veniam cupidatat velit incididunt. Non ad laborum
+        fugiat nostrud ut sit sunt velit sint ipsum. Officia quis nulla
+        consectetur mollit ex anim.
+      </p>
+
       <h3>This is a headline h3!</h3>
+
+      <p>
+        Velit nulla deserunt sit non non magna amet. Enim reprehenderit ad ad
+        esse dolore Lorem occaecat aliqua magna laboris. Do deserunt velit esse
+        velit ullamco Lorem veniam cupidatat velit incididunt. Non ad laborum
+        fugiat nostrud ut sit sunt velit sint ipsum. Officia quis nulla
+        consectetur mollit ex anim. Minim fugiat commodo tempor aliqua sunt
+        laboris exercitation et non adipisicing excepteur velit et. Aliquip anim
+        duis et cupidatat elit quis duis exercitation quis minim dolore fugiat
+        commodo amet.
+      </p>
+
       <h4>This is a headline h4!</h4>
+
+      <p>
+        Velit nulla deserunt sit non non magna amet. Enim reprehenderit ad ad
+        esse dolore Lorem occaecat aliqua magna laboris. Do deserunt velit esse
+        velit ullamco Lorem veniam cupidatat velit incididunt. Non ad laborum
+        fugiat nostrud ut sit sunt velit sint ipsum. Officia quis nulla
+        consectetur mollit ex anim. Minim fugiat commodo tempor aliqua sunt
+        laboris exercitation et non adipisicing excepteur velit et. Aliquip anim
+        duis et cupidatat elit quis duis exercitation quis minim dolore fugiat
+        commodo amet.
+      </p>
+
       <h5>This is a headline h5!</h5>
+
+      <p>
+        Velit nulla deserunt sit non non magna amet. Enim reprehenderit ad ad
+        esse dolore Lorem occaecat aliqua magna laboris. Do deserunt velit esse
+        velit ullamco Lorem veniam cupidatat velit incididunt.
+      </p>
+
+      <p>
+        Velit nulla deserunt sit non non magna amet. Enim reprehenderit ad ad
+        esse dolore Lorem occaecat aliqua magna laboris. Do deserunt velit esse
+        velit ullamco Lorem veniam cupidatat velit incididunt. Non ad laborum
+        fugiat nostrud ut sit sunt velit sint ipsum. Officia quis nulla
+        consectetur mollit ex anim. Minim fugiat commodo tempor aliqua sunt
+        laboris exercitation et non adipisicing excepteur velit et. Aliquip anim
+        duis et cupidatat elit quis duis exercitation quis minim dolore fugiat
+        commodo amet.
+      </p>
+
       <h6>This is a headline h6!</h6>
 
       <p>
@@ -33,12 +104,6 @@ const IndexPage = () => {
         duis et cupidatat elit quis duis exercitation quis minim dolore fugiat
         commodo amet.
       </p>
-
-      <code>
-        Laboris laborum do nisi adipisicing occaecat veniam sit et exercitation.
-      </code>
-
-      <pre>Ex non Lorem do commodo tempor nulla.</pre>
 
       <ul>
         <li>Deserunt mollit amet in nisi non.</li>
