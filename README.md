@@ -155,27 +155,3 @@ npm run prettier
 ```
 
 There is hook for `husky` with `lint-staged` that runs `Prettier` before every git commit to on staged files.
-
-## Global styles
-
-<hr />
-
-In this chapter is about the global styles which can be reused for styling the app. For styling `styled-components` is used. All global styles you can from `root` find in the folder `/src/common/styles/`.
-
-### Basic global styles
-
-All basic global styles stored in `index.tsx`
-
-#### `GlobalStyles`
-
-... in progress
-
-### Layout
-
-All global layout styles stored in `layout.tsx`
-
-#### `GlobalLayout`
-
-The component `GlobalLayout` consists of CSS utility class selectors that can be embedded into the JSX markup as needed. To use these selectors the component itself need get embedded as JSX-Element on top level of the page components.
-
-<img src="./documentation/images/GlobalLayout.png" alt="Example: Embedded GlobalLayout component" style="border: 1px solid"/>
