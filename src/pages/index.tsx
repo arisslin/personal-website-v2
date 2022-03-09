@@ -1,5 +1,4 @@
 import * as React from 'react';
-import GlobalBasicStyles from '../common/basic';
 import GlobalStyles from '../common/styles';
 
 const IndexPage = () => {
