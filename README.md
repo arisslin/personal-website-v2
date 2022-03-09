@@ -4,7 +4,7 @@ This is the project about the second personal website of Andreas Rissling. Here 
 
 ## Tech stack
 
-<hr>
+<hr />
 
 In this chapter only the main technologies of the project are listed. A detailed overview can be found in the _package.json_ file under the keys **dependencies** and **devDependencies**.
 
@@ -27,7 +27,7 @@ To support the development process the technologies listed below are used:
 
 ## Requirements and Setup
 
-<hr>
+<hr />
 
 `npm` and `Node.js` are needed to installed on the local maschine. When is started this project i was using `npm` _v6.14.8_ and `Node.js` _v14.15.0_.
 
@@ -46,7 +46,7 @@ npm i
 
 ## Developing
 
-<hr>
+<hr />
 
 For running the development server you can run following `npm` scripts in your console.
 
@@ -64,7 +64,7 @@ The site is now running at http://localhost:8000. You aslo find **GraphiQL**, an
 
 ## Build and deploy
 
-<hr>
+<hr />
 
 To compile the app and make it ready for deployment use following command:
 
@@ -84,7 +84,7 @@ You can view the site in the browser now on http://localhost:9000/
 
 ## Cleanup
 
-<hr>
+<hr />
 
 If the local project has issues `Gatsby` provides a clean up script.
 
@@ -96,7 +96,7 @@ For more information read the documentation on https://www.gatsbyjs.com/docs/ref
 
 ## ESlint
 
-<hr>
+<hr />
 
 `ESlint` is used for statically analyzing the code and finding problems. It scans all _\*.js,_ _\*.jsx,_ _\*.ts_ and _\*.tsx_ files in the repository. You can run the linter manually over following script:
 
@@ -109,7 +109,7 @@ There is a hook that runs before every push on all project files.
 
 ## Storybook
 
-<hr>
+<hr />
 
 `Storybook` is used for isolated developmend of React components and for documentation. You can start storybook with followin command from the repo:
 
@@ -126,7 +126,7 @@ npm run build-storybook
 
 ## Testing
 
-<hr>
+<hr />
 
 For unit testing `jest` and `testing-library` is used. To run the tests start following script:
 
@@ -142,7 +142,7 @@ npm run test:coverage
 
 ## Prettier
 
-<hr>
+<hr />
 
 For formatting and prettifing code `Prettier` is used.
 It runs an all _\*.js_, _\*.jsx_, _\*.ts_, _*.tsx*_, _\*.html_, _\*.css_,
