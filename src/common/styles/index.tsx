@@ -1,10 +1,10 @@
 import * as React from 'react';
 import GlobalBasicStyles from '../basic';
-import GlobalLayout from './layout';
+import GlobalLayoutStyles from './layout';
 
 const GlobalStyles = () => (
   <>
-    <GlobalLayout />
+    <GlobalLayoutStyles />
     <GlobalBasicStyles />
   </>
 );

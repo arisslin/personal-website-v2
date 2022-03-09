@@ -10,7 +10,7 @@ export const breakpoints = {
 
 const maxContainerWidth = '1200px';
 
-const GlobalLayout = createGlobalStyle`
+const GlobalLayoutStyles = createGlobalStyle`
   .layout-container {
     margin: 0 auto;
     max-width: ${maxContainerWidth};
@@ -24,4 +24,4 @@ const GlobalLayout = createGlobalStyle`
   }
 `;
 
-export default GlobalLayout;
+export default GlobalLayoutStyles;
