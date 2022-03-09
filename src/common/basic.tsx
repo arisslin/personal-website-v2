@@ -5,10 +5,6 @@ import '@fontsource/open-sans/700.css';
 
 const GlobalBasicStyles = createGlobalStyle`
   :root {
-    // --- Colors ---
-    --color-dark: #131b20;
-    --color-light: #fafafa;
-
     // --- Typo ---
     font-size: 16px;
 
