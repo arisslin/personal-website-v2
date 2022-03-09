@@ -7,7 +7,7 @@ const IndexPage = () => {
     <>
       <GlobalStyles />
       <GlobalLayout />
-      <main className='container'>
+      <main className='layout-container'>
         <h1>This is a headline h1!</h1>
 
         <p>
