@@ -22,12 +22,6 @@ const GlobalBasicStyles = createGlobalStyle`
     letter-spacing: 1px;
   }
 
-  h1, 
-  h2,
-  h3 {
-    text-transform: uppercase;
-  }
-
   h1 {
     margin: 2rem 0;
     font-size: 2rem; // 32px
