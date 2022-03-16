@@ -1,4 +1,5 @@
 import { action } from '@storybook/addon-actions';
+import GlobalStyles from '../src/common/styles/index';
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
@@ -25,3 +26,12 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <>
+      <GlobalStyles />
+      <Story />
+    </>
+  ),
+];
