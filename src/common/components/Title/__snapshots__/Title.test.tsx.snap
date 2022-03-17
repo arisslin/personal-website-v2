@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Snapshot test for Title default 1`] = `
+<div>
+  <h1
+    class="Title__TitleStyled-sc-1w14b76-0 cmjKpj"
+  >
+    Andreas Rissling
+    <hr />
+    <span>
+      Web Developer
+    </span>
+  </h1>
+</div>
+`;

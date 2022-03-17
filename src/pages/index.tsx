@@ -1,11 +1,13 @@
 import * as React from 'react';
 import GlobalStyles from '../common/styles';
+import Title from '../common/components/Title/Title';
 
 const IndexPage = () => {
   return (
     <>
       <GlobalStyles />
       <main className='layout-container'>
+        <Title />
         <h1>This is a headline h1!</h1>
 
         <p>
