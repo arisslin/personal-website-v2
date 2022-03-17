@@ -4,8 +4,6 @@ This is the project about the second personal website of Andreas Rissling. Here 
 
 ## Tech stack
 
-<hr />
-
 In this chapter only the main technologies of the project are listed. A detailed overview can be found in the _package.json_ file under the keys **dependencies** and **devDependencies**.
 
 The whole project is based on **Gatsby** and written in **TypeScript.** Some configuration files are written in **JavaScript**. The main technologies are:
@@ -27,8 +25,6 @@ To support the development process the technologies listed below are used:
 
 ## Requirements and Setup
 
-<hr />
-
 `npm` and `Node.js` are needed to installed on the local maschine. When is started this project i was using `npm` _v6.14.8_ and `Node.js` _v14.15.0_.
 
 To get started clone the repository from github to your local maschine.
@@ -46,8 +42,6 @@ npm i
 
 ## Developing
 
-<hr />
-
 For running the development server you can run following `npm` scripts in your console.
 
 ```
@@ -63,8 +57,6 @@ npm run develop
 The site is now running at http://localhost:8000. You aslo find **GraphiQL**, an in-browser IDE, to explore the site's data and schema with `GraphQL` on http://localhost:8000/\_\_\_graphql
 
 ## Build and deploy
-
-<hr />
 
 To compile the app and make it ready for deployment use following command:
 
@@ -84,8 +76,6 @@ You can view the site in the browser now on http://localhost:9000/
 
 ## Cleanup
 
-<hr />
-
 If the local project has issues `Gatsby` provides a clean up script.
 
 ```
@@ -95,8 +85,6 @@ npm run clean
 For more information read the documentation on https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean
 
 ## ESlint
-
-<hr />
 
 `ESlint` is used for statically analyzing the code and finding problems. It scans all _\*.js,_ _\*.jsx,_ _\*.ts_ and _\*.tsx_ files in the repository. You can run the linter manually over following script:
 
@@ -108,8 +96,6 @@ npm run lint
 There is a hook that runs before every push on all project files.
 
 ## Storybook
-
-<hr />
 
 `Storybook` is used for isolated developmend of React components and for documentation. You can start storybook with followin command from the repo:
 
@@ -126,8 +112,6 @@ npm run build-storybook
 
 ## Testing
 
-<hr />
-
 For unit testing `jest` and `testing-library` is used. To run the tests start following script:
 
 ```
@@ -141,8 +125,6 @@ npm run test:coverage
 ```
 
 ## Prettier
-
-<hr />
 
 For formatting and prettifing code `Prettier` is used.
 It runs an all _\*.js_, _\*.jsx_, _\*.ts_, _*.tsx*_, _\*.html_, _\*.css_,
