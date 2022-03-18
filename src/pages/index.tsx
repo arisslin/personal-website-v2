@@ -1,13 +1,27 @@
 import * as React from 'react';
+import styled from 'styled-components/macro';
 import GlobalStyles from '../common/styles';
 import Title from '../common/components/Title/Title';
+import { StaticImage } from 'gatsby-plugin-image';
+import { breakpoints } from '../common/styles/layout';
 
 const IndexPage = () => {
+  const imageSize = 300;
+
   return (
     <>
       <GlobalStyles />
-      <main className='layout-container'>
+      <Home className='layout-container'>
         <Title />
+        <StaticImage
+          src='../images/XING_Profilbild.jpg'
+          alt='Andreas Rissling'
+          width={imageSize}
+          height={imageSize}
+          quality={100}
+          className='home-page__title-image'
+        />
+
         <h1>This is a headline h1!</h1>
 
         <p>
@@ -135,9 +149,22 @@ const IndexPage = () => {
           <li>Nulla anim mollit consectetur Lorem veniam fugiat.</li>
           <li>Ad nisi sit non sint.</li>
         </ol>
-      </main>
+      </Home>
     </>
   );
 };
+
+const Home = styled.main`
+  .home-page__title-image {
+    display: block;
+    border-radius: 50%;
+    margin: 60px auto;
+    max-width: 260px;
+
+    @media screen and (min-width: ${breakpoints.small}) {
+      max-width: 300px;
+    }
+  }
+`;
 
 export default IndexPage;

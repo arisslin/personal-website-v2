@@ -1,9 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Title Snapshot test for Title default 1`] = `
+.c0 {
+  margin-top: 50px;
+  font-size: 1.75rem;
+  font-weight: 300;
+  -webkit-letter-spacing: 3px;
+  -moz-letter-spacing: 3px;
+  -ms-letter-spacing: 3px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.c0 hr {
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  height: 1px;
+  width: 100px;
+  background-color: var(--color-dark);
+}
+
+.c0 span {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-top: 70px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 hr {
+    width: 110px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 span {
+    font-size: 1.75rem;
+  }
+}
+
 <div>
   <h1
-    class="Title__TitleStyled-sc-1w14b76-0 cmjKpj"
+    class="c0"
   >
     Andreas Rissling
     <hr />

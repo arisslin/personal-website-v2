@@ -11,12 +11,14 @@ const Title = () => (
 );
 
 const TitleStyled = styled.h1`
+  margin-top: 50px;
   font-size: 1.75rem;
   font-weight: 300;
   letter-spacing: 3px;
   text-align: center;
 
   @media screen and (min-width: ${breakpoints.medium}) {
+    margin-top: 70px;
     font-size: 2rem;
   }
 
