@@ -25,7 +25,7 @@
     "@fontsource/montserrat": "^4.5.7",
     "@fontsource/open-sans": "^4.5.8",
     "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.21",
+    "@types/node": "^17.0.23",
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "@types/react-helmet": "^6.1.5",
