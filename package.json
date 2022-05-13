@@ -22,7 +22,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fontsource/montserrat": "^4.5.7",
+    "@fontsource/montserrat": "^4.5.10",
     "@fontsource/open-sans": "^4.5.8",
     "@types/jest": "^27.5.0",
     "@types/node": "^17.0.31",
