@@ -56,6 +56,7 @@ const GlobalBasicStyles = createGlobalStyle`
 
   p, ul, ol {
     font-size: ${fontSizesInRem.base}rem;
+    line-height: 1.5;
     
     @media screen and (min-width: ${breakpoints.medium}){
       font-size: ${fontSizesInRem.large}rem;
