@@ -14,7 +14,7 @@ const IndexPage = () => {
       <Home className='layout-container'>
         <Title />
         <StaticImage
-          src='../images/XING_Profilbild.jpg'
+          src='../assets/images/XING_Profilbild.jpg'
           alt='Andreas Rissling'
           width={imageSize}
           height={imageSize}
