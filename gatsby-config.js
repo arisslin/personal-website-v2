@@ -16,5 +16,17 @@ module.exports = {
       },
       __key: 'images',
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Andreas Rissling`,
+        short_name: `AR`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icons: [],
+      },
+    },
   ],
 };
