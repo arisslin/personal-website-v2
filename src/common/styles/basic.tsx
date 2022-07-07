@@ -22,6 +22,7 @@ const GlobalBasicStyles = createGlobalStyle`
   h5,
   h6 {
     letter-spacing: 1px;
+    text-align: center;
   }
 
   h1 {

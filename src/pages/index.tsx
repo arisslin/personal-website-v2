@@ -23,12 +23,15 @@ const IndexPage = () => {
         />
 
         <p>
-          Hallo ich bin Andreas,
+          Hallo, ich bin Andreas.
           <br />
           Web-Entwickler, Ingenieur für Medientechnik und Musik Produzent. Auf
           dieser Webseite finden Sie einige Informationen über mich und meine
           Tätigkeit als Entwickler.
         </p>
+        <section>
+          <h2>Skills</h2>
+        </section>
       </Home>
     </>
   );
