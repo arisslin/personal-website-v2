@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { cleanup, render, screen } from '@testing-library/react';
-import SkillSection, { skillTags } from './SkillSection';
+import SkillSection from './SkillSection';
 import { doSnapshotTest } from '../../helper/testHelper';
+import { mockedSkillTags } from '../../../mocks/mockedSkillTags';
 
 describe('SkillSection', () => {
-  const component = <SkillSection tags={skillTags} />;
+  const component = <SkillSection tags={mockedSkillTags} />;
 
   afterEach(() => {
     cleanup();
@@ -22,7 +23,7 @@ describe('SkillSection', () => {
   it('it displays SkillTags', () => {
     render(component);
 
-    skillTags.forEach((tag) => {
+    mockedSkillTags.forEach((tag) => {
       expect(screen.getByText(tag.text)).toBeInTheDocument();
     });
   });
