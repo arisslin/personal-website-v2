@@ -1,5 +1,9 @@
 import * as React from 'react';
 
-const SkillTag = () => <span>SkillTag</span>;
+type SkillTagProps = {
+  text: string;
+};
+
+const SkillTag = ({ text }: SkillTagProps) => <span>{text}</span>;
 
 export default SkillTag;

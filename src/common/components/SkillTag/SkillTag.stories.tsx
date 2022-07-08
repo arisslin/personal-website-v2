@@ -18,4 +18,4 @@ function getDescription(): string {
   return '<h2>About</h2>' + '<p>' + '....' + '</p>';
 }
 
-export const SkillTag: Story = () => <SkillTagComponent />;
+export const SkillTag: Story = () => <SkillTagComponent text='TypeScript' />;
