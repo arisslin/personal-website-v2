@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkillTag Snapshot test for SkillTag  1`] = `
+<div>
+  <span
+    class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+    data-testid="skill-tag"
+  >
+    TypeScript
+  </span>
+</div>
+`;
