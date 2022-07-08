@@ -3,26 +3,6 @@ import styled from 'styled-components/macro';
 import { breakpoints } from '../../styles/layout';
 import SkillTag, { SkillTagProps } from '../../components/SkillTag/SkillTag';
 
-const skillTags: SkillTagProps[] = [
-  { text: 'HTML5' },
-  { text: 'CSS3' },
-  { text: 'JavaScript' },
-  { text: 'TypeScript' },
-  { text: 'React.jS' },
-  { text: 'Gatsby' },
-  { text: 'Node.js' },
-  { text: 'Express.js' },
-  { text: 'Bootstrap' },
-  { text: 'Jest' },
-  { text: 'Cypress' },
-  { text: 'Storybook' },
-  { text: 'Git' },
-  { text: 'npm' },
-  { text: 'agile Softwareentwicklung' },
-  { text: 'Software Craftsmanship' },
-  { text: 'TypeDoc' },
-];
-
 type SkillSectionProps = {
   tags: SkillTagProps[];
 };
@@ -52,4 +32,3 @@ const SkillSectionStyled = styled.section`
 `;
 
 export default SkillSection;
-export { skillTags };

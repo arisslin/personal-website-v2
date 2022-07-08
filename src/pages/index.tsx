@@ -4,9 +4,8 @@ import GlobalStyles from '../common/styles';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
-import SkillSection, {
-  skillTags,
-} from '../common/Sections/SkillSection/SkillSection';
+import SkillSection from '../common/Sections/SkillSection/SkillSection';
+import { mockedSkillTags } from '../mocks/mockedSkillTags';
 
 const IndexPage = () => {
   const imageSize = 300;
@@ -32,7 +31,7 @@ const IndexPage = () => {
           dieser Webseite finden Sie einige Informationen über mich und meine
           Tätigkeit als Entwickler.
         </p>
-        <SkillSection tags={skillTags} />
+        <SkillSection tags={mockedSkillTags} />
       </Home>
     </>
   );
