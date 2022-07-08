@@ -15,7 +15,13 @@ export default {
 } as Meta;
 
 function getDescription(): string {
-  return '<h2>About</h2>' + '<p>' + '....' + '</p>';
+  return (
+    '<h2>About</h2>' +
+    '<p>' +
+    'The <b>SkillTag</b> was developed in Juli 2022. It displays the ' +
+    'name of a propped skill.' +
+    '</p>'
+  );
 }
 
 export const SkillTag: Story = () => <SkillTagComponent text='TypeScript' />;
