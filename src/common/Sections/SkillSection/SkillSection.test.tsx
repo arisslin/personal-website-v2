@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { cleanup, render, screen } from '@testing-library/react';
 import SkillSection, { skillTags } from './SkillSection';
+import { doSnapshotTest } from '../../helper/testHelper';
 
 describe('SkillSection', () => {
   const component = <SkillSection tags={skillTags} />;
@@ -31,4 +32,6 @@ describe('SkillSection', () => {
 
     expect(screen.queryByText('Skills')).not.toBeInTheDocument();
   });
+
+  doSnapshotTest(component);
 });
