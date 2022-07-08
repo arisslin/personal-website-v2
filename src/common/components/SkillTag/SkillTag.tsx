@@ -13,7 +13,6 @@ const SkillTagStyled = styled.span`
   border-radius: 3px;
   display: inline-block;
   padding: 10px 12px;
-
   background-color: var(--color-yo);
   color: var(--color-light);
 `;
