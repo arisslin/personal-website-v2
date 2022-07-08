@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-import SkillTag from './SkillTag';
+import SkillTag, { testId } from './SkillTag';
 
 describe('SkillTag', () => {
   it('renders with text', () => {
@@ -9,6 +9,14 @@ describe('SkillTag', () => {
 
     render(component);
 
-    expect(screen.getByText(text));
+    expect(screen.getByText(text)).toBeInTheDocument();
+  });
+
+  it('does not render if text is an empty string', () => {
+    const component = <SkillTag text='' />;
+
+    render(component);
+
+    expect(screen.queryByTestId(testId)).not.toBeInTheDocument();
   });
 });

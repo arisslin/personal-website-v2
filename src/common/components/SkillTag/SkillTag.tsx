@@ -5,9 +5,13 @@ type SkillTagProps = {
   text: string;
 };
 
-const SkillTag = ({ text }: SkillTagProps) => (
-  <SkillTagStyled>{text}</SkillTagStyled>
-);
+const SkillTag = ({ text }: SkillTagProps): JSX.Element => {
+  if (!text) {
+    return <></>;
+  }
+
+  return <SkillTagStyled data-testid={testId}>{text}</SkillTagStyled>;
+};
 
 const SkillTagStyled = styled.span`
   border-radius: 3px;
@@ -17,5 +21,7 @@ const SkillTagStyled = styled.span`
   color: var(--color-light);
 `;
 
+const testId = 'skill-tag';
+
 export default SkillTag;
-export { SkillTagProps };
+export { SkillTagProps, testId };
