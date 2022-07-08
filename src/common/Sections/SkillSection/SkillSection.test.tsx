@@ -25,4 +25,10 @@ describe('SkillSection', () => {
       expect(screen.getByText(tag.text)).toBeInTheDocument();
     });
   });
+
+  it('does not render if tags are empty', () => {
+    render(<SkillSection tags={[]} />);
+
+    expect(screen.queryByText('Skills')).not.toBeInTheDocument();
+  });
 });

@@ -28,6 +28,10 @@ type SkillSectionProps = {
 };
 
 const SkillSection = ({ tags }: SkillSectionProps) => {
+  if (tags.length === 0) {
+    return <></>;
+  }
+
   return (
     <SkillSectionStyled>
       <h2>Skills</h2>
