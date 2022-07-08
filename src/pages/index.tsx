@@ -4,6 +4,29 @@ import GlobalStyles from '../common/styles';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
+import SkillTag, {
+  SkillTagProps,
+} from '../common/components/SkillTag/SkillTag';
+
+const skills: SkillTagProps[] = [
+  { text: 'HTML5' },
+  { text: 'CSS3' },
+  { text: 'JavaScript' },
+  { text: 'TypeScript' },
+  { text: 'React.jS' },
+  { text: 'Gatsby' },
+  { text: 'Node.js' },
+  { text: 'Express.js' },
+  { text: 'Bootstrap' },
+  { text: 'Jest' },
+  { text: 'Cypress' },
+  { text: 'Storybook' },
+  { text: 'Git' },
+  { text: 'npm' },
+  { text: 'agile Softwareentwicklung' },
+  { text: 'Software Craftsmanship' },
+  { text: 'TypeDoc' },
+];
 
 const IndexPage = () => {
   const imageSize = 300;
@@ -31,6 +54,9 @@ const IndexPage = () => {
         </p>
         <section>
           <h2>Skills</h2>
+          {skills.map((skill, index) => (
+            <SkillTag key={`skill-tag-${index}`} text={skill.text} />
+          ))}
         </section>
       </Home>
     </>

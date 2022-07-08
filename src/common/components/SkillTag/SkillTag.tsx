@@ -10,10 +10,13 @@ const SkillTag = ({ text }: SkillTagProps) => (
 );
 
 const SkillTagStyled = styled.span`
-  background-color: var(--color-yo);
   border-radius: 3px;
-  color: var(--color-light);
+  display: inline-block;
   padding: 10px 12px;
+
+  background-color: var(--color-yo);
+  color: var(--color-light);
 `;
 
 export default SkillTag;
+export { SkillTagProps };
