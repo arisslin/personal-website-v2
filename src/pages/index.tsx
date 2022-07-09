@@ -4,6 +4,8 @@ import GlobalStyles from '../common/styles';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
+import SkillSection from '../common/Sections/SkillSection/SkillSection';
+import { mockedSkillTags } from '../mocks/mockedSkillTags';
 
 const IndexPage = () => {
   const imageSize = 300;
@@ -23,12 +25,13 @@ const IndexPage = () => {
         />
 
         <p>
-          Hallo ich bin Andreas,
+          Hallo, ich bin Andreas.
           <br />
           Web-Entwickler, Ingenieur für Medientechnik und Musik Produzent. Auf
           dieser Webseite finden Sie einige Informationen über mich und meine
           Tätigkeit als Entwickler.
         </p>
+        <SkillSection tags={mockedSkillTags} />
       </Home>
     </>
   );

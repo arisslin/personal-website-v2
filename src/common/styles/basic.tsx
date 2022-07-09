@@ -21,7 +21,9 @@ const GlobalBasicStyles = createGlobalStyle`
   h4,
   h5,
   h6 {
+    width: 100%;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   h1 {
@@ -60,6 +62,14 @@ const GlobalBasicStyles = createGlobalStyle`
     
     @media screen and (min-width: ${breakpoints.medium}){
       font-size: ${fontSizesInRem.large}rem;
+    }
+  }
+
+  main {
+    padding-bottom: 1.75rem;
+
+    @media screen and (min-width: ${breakpoints.medium}){
+      padding-bottom: 2rem;
     }
   }
 `;
