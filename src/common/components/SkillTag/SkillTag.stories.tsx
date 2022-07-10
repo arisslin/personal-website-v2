@@ -5,6 +5,11 @@ import SkillTagComponent, { SkillTagProps } from './SkillTag';
 export default {
   title: 'Components/SkillTag',
   component: SkillTagComponent,
+  argTypes: {
+    text: {
+      description: 'Text which get displayed inside the tag.',
+    },
+  },
   parameters: {
     docs: {
       description: {
