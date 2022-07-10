@@ -1,10 +1,15 @@
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react';
-import SkillTagComponent from './SkillTag';
+import SkillTagComponent, { SkillTagProps } from './SkillTag';
 
 export default {
   title: 'Components/SkillTag',
   component: SkillTagComponent,
+  argTypes: {
+    text: {
+      description: 'Text which get displayed inside the tag.',
+    },
+  },
   parameters: {
     docs: {
       description: {
@@ -24,4 +29,9 @@ function getDescription(): string {
   );
 }
 
-export const SkillTag: Story = () => <SkillTagComponent text='TypeScript' />;
+export const SkillTag: Story<SkillTagProps> = (args) => (
+  <SkillTagComponent text={args.text} />
+);
+SkillTag.args = {
+  text: 'TypeScript',
+};
