@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react';
-import SkillTagComponent from './SkillTag';
+import SkillTagComponent, { SkillTagProps } from './SkillTag';
 
 export default {
   title: 'Components/SkillTag',
@@ -24,4 +24,9 @@ function getDescription(): string {
   );
 }
 
-export const SkillTag: Story = () => <SkillTagComponent text='TypeScript' />;
+export const SkillTag: Story<SkillTagProps> = (args) => (
+  <SkillTagComponent text={args.text} />
+);
+SkillTag.args = {
+  text: 'TypeScript',
+};
