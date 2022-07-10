@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react';
-import SkillSectionComponent from './SkillSection';
+import SkillSectionComponent, { SkillSectionProps } from './SkillSection';
 import { mockedSkillTags } from '../../../mocks/mockedSkillTags';
 
 export default {
@@ -25,6 +25,10 @@ function getDescription(): string {
   );
 }
 
-export const SkillSection: Story = () => (
-  <SkillSectionComponent tags={mockedSkillTags} />
+export const SkillSection: Story<SkillSectionProps> = (args) => (
+  <SkillSectionComponent tags={args.tags} />
 );
+
+SkillSection.args = {
+  tags: mockedSkillTags,
+};

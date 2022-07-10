@@ -4,7 +4,7 @@ import GlobalStyles from '../common/styles';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
-import SkillSection from '../common/Sections/SkillSection/SkillSection';
+import SkillSection from '../common/sections/SkillSection/SkillSection';
 import { mockedSkillTags } from '../mocks/mockedSkillTags';
 
 const IndexPage = () => {
