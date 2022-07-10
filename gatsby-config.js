@@ -16,6 +16,7 @@ module.exports = {
       },
       __key: 'images',
     },
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
