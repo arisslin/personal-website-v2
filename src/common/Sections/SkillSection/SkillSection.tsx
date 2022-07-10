@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 import { breakpoints } from '../../styles/layout';
 import SkillTag, { SkillTagProps } from '../../components/SkillTag/SkillTag';
 
-type SkillSectionProps = {
+export type SkillSectionProps = {
   tags: SkillTagProps[];
 };
 

@@ -6,6 +6,11 @@ import { mockedSkillTags } from '../../../mocks/mockedSkillTags';
 export default {
   title: 'Sections/SkillSection',
   component: SkillSectionComponent,
+  argTypes: {
+    tags: {
+      description: 'SkillTags which get rendered inside the section.',
+    },
+  },
   parameters: {
     docs: {
       description: {
