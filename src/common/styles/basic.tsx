@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import { breakpoints } from './layout';
+import { fontSizesInRem } from './typography';
 
 const GlobalBasicStyles = createGlobalStyle`
   * {
@@ -19,37 +21,56 @@ const GlobalBasicStyles = createGlobalStyle`
   h4,
   h5,
   h6 {
+    width: 100%;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   h1 {
     margin: 2rem 0;
-    font-size: 2rem; // 32px
+    font-size: ${fontSizesInRem.headingXl}rem;
   }
 
   h2 {
     margin: 1.75rem 0;
-    font-size: 1.75rem; // 28px
+    font-size: ${fontSizesInRem.headingL}rem;
   }
 
   h3 {
     margin: 1.5rem 0;
-    font-size: 1.5rem; // 24px
+    font-size: ${fontSizesInRem.headingM}rem;
   }
 
   h4 {
     margin: 1.25rem 0;
-    font-size: 1.25rem; // 20px
+    font-size: ${fontSizesInRem.headingS}rem;
   }
 
   h5 {
     margin: 1.125rem 0;
-    font-size: 1.125rem; // 18px
+    font-size: ${fontSizesInRem.large}rem;
   }
 
   h6 {
     margin: 1rem 0;
-    font-size: var(--font-size-base);
+    font-size: ${fontSizesInRem.base}rem;
+  }
+
+  p, ul, ol {
+    font-size: ${fontSizesInRem.base}rem;
+    line-height: 1.5;
+    
+    @media screen and (min-width: ${breakpoints.medium}){
+      font-size: ${fontSizesInRem.large}rem;
+    }
+  }
+
+  main {
+    padding-bottom: 1.75rem;
+
+    @media screen and (min-width: ${breakpoints.medium}){
+      padding-bottom: 2rem;
+    }
   }
 `;
 
