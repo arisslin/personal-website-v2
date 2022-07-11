@@ -1,11 +1,12 @@
 import * as React from 'react';
 
 type ContactLinkProps = {
-  children?: React.ReactNode;
+  children: React.ReactNode;
+  href: string;
 };
 
-const ContactLink = ({ children }: ContactLinkProps) => {
-  return <a href='www.gueteklasse-a.de'>{children}</a>;
+const ContactLink = ({ children, href }: ContactLinkProps) => {
+  return <a href={href}>{children}</a>;
 };
 
 export default ContactLink;
