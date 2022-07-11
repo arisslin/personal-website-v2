@@ -7,7 +7,7 @@ describe('ContactLink', () => {
   const href = 'www.gueteklasse-a.de';
   const component = <ContactLink href={href}>{text}</ContactLink>;
 
-  it('renders with one child', () => {
+  it('renders with child', () => {
     render(component);
 
     expect(screen.getByText(text)).toBeInTheDocument();
@@ -39,5 +39,18 @@ describe('ContactLink', () => {
     render(component);
 
     expect(screen.getByText(text).getAttribute('href')).toBe(href);
+  });
+
+  it('renders as a mailto anchor if href is an email adress', () => {
+    const mailAddress = 'test@test-domain.net';
+    const componentWithMail = (
+      <ContactLink href={mailAddress}>{text}</ContactLink>
+    );
+
+    render(componentWithMail);
+
+    expect(screen.getByText(text).getAttribute('href')).toBe(
+      'mailto:' + mailAddress
+    );
   });
 });

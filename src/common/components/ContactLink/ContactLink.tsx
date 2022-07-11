@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as EmailValidator from 'email-validator';
 
 type ContactLinkProps = {
   children: React.ReactNode;
@@ -6,7 +7,9 @@ type ContactLinkProps = {
 };
 
 const ContactLink = ({ children, href }: ContactLinkProps) => {
-  return <a href={href}>{children}</a>;
+  const isEmail = EmailValidator.validate(href);
+
+  return <a href={isEmail ? 'mailto:' + href : href}>{children}</a>;
 };
 
 export default ContactLink;
