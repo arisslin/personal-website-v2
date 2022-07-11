@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-type ContactLinkProps = {
-  children: React.ReactNode;
+export type ContactLinkProps = {
+  text: string;
   href: string;
 };
 
-const ContactLink = ({ children, href }: ContactLinkProps) => (
+const ContactLink = ({ text, href }: ContactLinkProps) => (
   <a href={href} rel='noreferrer' target='_blank'>
-    {children}
+    {text}
   </a>
 );
 
