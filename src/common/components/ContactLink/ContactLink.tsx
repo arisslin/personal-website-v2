@@ -7,9 +7,11 @@ type ContactLinkProps = {
 };
 
 const ContactLink = ({ children, href }: ContactLinkProps) => {
-  const isEmail = EmailValidator.validate(href);
-
-  return <a href={isEmail ? 'mailto:' + href : href}>{children}</a>;
+  return (
+    <a href={href} rel='noreferrer' target='_blank'>
+      {children}
+    </a>
+  );
 };
 
 export default ContactLink;

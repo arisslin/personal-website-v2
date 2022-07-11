@@ -41,16 +41,9 @@ describe('ContactLink', () => {
     expect(screen.getByText(text).getAttribute('href')).toBe(href);
   });
 
-  it('renders as a mailto anchor if href is an email adress', () => {
-    const mailAddress = 'test@test-domain.net';
-    const componentWithMail = (
-      <ContactLink href={mailAddress}>{text}</ContactLink>
-    );
+  it('opens links in a new browser tab', () => {
+    render(component);
 
-    render(componentWithMail);
-
-    expect(screen.getByText(text).getAttribute('href')).toBe(
-      'mailto:' + mailAddress
-    );
+    expect(screen.getByText(text).getAttribute('target')).toBe('_blank');
   });
 });
