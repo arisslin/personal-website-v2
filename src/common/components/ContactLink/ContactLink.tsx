@@ -5,7 +5,7 @@ type ContactLinkProps = {
 };
 
 const ContactLink = ({ children }: ContactLinkProps) => {
-  return <div>{children}</div>;
+  return <a href='www.gueteklasse-a.de'>{children}</a>;
 };
 
 export default ContactLink;
