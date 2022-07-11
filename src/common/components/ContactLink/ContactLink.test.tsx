@@ -46,4 +46,10 @@ describe('ContactLink', () => {
 
     expect(screen.getByText(text).getAttribute('target')).toBe('_blank');
   });
+
+  it('renders link with rel noreferrer', () => {
+    render(component);
+
+    expect(screen.getByText(text).getAttribute('rel')).toBe('noreferrer');
+  });
 });
