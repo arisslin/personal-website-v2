@@ -16,7 +16,13 @@ export default {
 } as Meta;
 
 function getDescription(): string {
-  return '<h2>About</h2>' + '<p>' + '' + '</p>';
+  return (
+    '<h2>About</h2>' +
+    '<p>' +
+    'The <b>ContactLink</b> was developed in Juli 2022. It is a link to an ' +
+    'external contact ressource like a website, phone number or eMail adress.' +
+    '</p>'
+  );
 }
 
 const text = 'gueteklasse-a.de';

@@ -9,103 +9,103 @@ exports[`SkillSection Snapshot test for SkillSection  1`] = `
       Skills
     </h2>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       HTML5
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       CSS3
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       JavaScript
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       TypeScript
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       React.jS
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Gatsby
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Node.js
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Express.js
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Bootstrap
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Jest
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Cypress
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Storybook
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Git
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       npm
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       agile Softwareentwicklung
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       Software Craftsmanship
     </span>
     <span
-      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 hjSGns"
+      class="SkillTag__SkillTagStyled-sc-pqp8qz-0 eUeqiS"
       data-testid="skill-tag"
     >
       TypeDoc
