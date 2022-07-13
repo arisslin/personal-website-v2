@@ -1,15 +1,16 @@
 import * as React from 'react';
+import { IconType } from 'react-icons';
 import styled from 'styled-components/macro';
-import { FaEnvelope } from 'react-icons/fa';
 
 export type ContactLinkProps = {
   text: string;
   href: string;
+  icon: IconType;
 };
 
-const ContactLink = ({ text, href }: ContactLinkProps) => (
+const ContactLink = ({ text, href, icon }: ContactLinkProps) => (
   <Anchor href={href} rel='noreferrer' target='_blank'>
-    <FaEnvelope />
+    {icon({ title: icon.name })}
     {text}
   </Anchor>
 );

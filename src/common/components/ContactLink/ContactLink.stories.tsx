@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react';
 import ContactLinkComponent, { ContactLinkProps } from './ContactLink';
+import { FaEnvelope } from 'react-icons/fa';
 
 export default {
   title: 'Components/ContactLink',
@@ -19,9 +20,10 @@ function getDescription(): string {
 }
 
 export const ContactLink: Story<ContactLinkProps> = (args) => (
-  <ContactLinkComponent href={args.href} text={args.text} />
+  <ContactLinkComponent href={args.href} text={args.text} icon={args.icon} />
 );
 ContactLink.args = {
   text: 'gueteklasse-a.de',
   href: 'https://www.gueteklasse-a.de',
+  icon: FaEnvelope,
 };
