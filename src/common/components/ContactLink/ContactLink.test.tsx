@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 import ContactLink from './ContactLink';
-import { FaEnvelope } from 'react-icons/fa';
+import { FaGlobe } from 'react-icons/fa';
+import { doSnapshotTest } from '../../helper/testHelper';
 
 describe('ContactLink', () => {
   const text = 'Test';
   const href = 'www.gueteklasse-a.de';
-  const component = <ContactLink href={href} text={text} icon={FaEnvelope} />;
+  const component = <ContactLink href={href} text={text} icon={FaGlobe} />;
+  const componentWithoutIcon = <ContactLink href={href} text={text} />;
 
   it('renders with a text', () => {
     render(component);
@@ -26,14 +28,20 @@ describe('ContactLink', () => {
     expect(screen.getByText(text).getAttribute('href')).toBe(href);
   });
 
-  it('renders with an icon', () => {
+  it('renders with an optional icon', () => {
     render(component);
 
-    expect(screen.getByTitle(FaEnvelope.name)).toBeInTheDocument();
+    expect(screen.getByTitle(FaGlobe.name)).toBeInTheDocument();
+  });
+
+  it('renders without an optional icon', () => {
+    render(component);
+
+    expect(screen.getByText(text)).toBeInTheDocument();
   });
 
   it('opens links in a new browser tab', () => {
-    render(component);
+    render(componentWithoutIcon);
 
     expect(screen.getByText(text).getAttribute('target')).toBe('_blank');
   });
@@ -43,4 +51,7 @@ describe('ContactLink', () => {
 
     expect(screen.getByText(text).getAttribute('rel')).toBe('noreferrer');
   });
+
+  doSnapshotTest(component, 'with icon');
+  doSnapshotTest(componentWithoutIcon, 'without icon');
 });

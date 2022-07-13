@@ -5,12 +5,12 @@ import styled from 'styled-components/macro';
 export type ContactLinkProps = {
   text: string;
   href: string;
-  icon: IconType;
+  icon?: IconType;
 };
 
 const ContactLink = ({ text, href, icon }: ContactLinkProps) => (
   <Anchor href={href} rel='noreferrer' target='_blank'>
-    {icon({ title: icon.name })}
+    {icon && icon({ title: icon.name })}
     {text}
   </Anchor>
 );
