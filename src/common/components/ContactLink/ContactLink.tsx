@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { FaBeer } from 'react-icons/fa';
+import styled from 'styled-components/macro';
+import { FaEnvelope } from 'react-icons/fa';
 
 export type ContactLinkProps = {
   text: string;
@@ -7,10 +8,25 @@ export type ContactLinkProps = {
 };
 
 const ContactLink = ({ text, href }: ContactLinkProps) => (
-  <a href={href} rel='noreferrer' target='_blank'>
-    <FaBeer />
+  <Anchor href={href} rel='noreferrer' target='_blank'>
+    <FaEnvelope />
     {text}
-  </a>
+  </Anchor>
 );
+
+const Anchor = styled.a`
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 10px 12px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+`;
 
 export default ContactLink;
