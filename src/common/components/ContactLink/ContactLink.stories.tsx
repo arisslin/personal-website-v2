@@ -6,6 +6,17 @@ import { FaGlobe } from 'react-icons/fa';
 export default {
   title: 'Components/ContactLink',
   component: ContactLinkComponent,
+  argTypes: {
+    text: {
+      description: 'Text which get displayed inside the tag.',
+    },
+    href: {
+      description: 'Link to the ressource.',
+    },
+    icon: {
+      description: 'Optional icon.',
+    },
+  },
   parameters: {
     docs: {
       description: {
