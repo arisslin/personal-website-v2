@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
+import { Helmet } from 'react-helmet';
 import GlobalStyles from '../common/styles';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -15,6 +16,10 @@ const IndexPage = () => {
   return (
     <>
       <GlobalStyles />
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Andreas Rissling</title>
+      </Helmet>
       <Home className='layout-container'>
         <Title />
         <StaticImage
