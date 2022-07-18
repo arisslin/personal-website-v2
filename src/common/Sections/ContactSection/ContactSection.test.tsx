@@ -24,6 +24,7 @@ describe('ContactSection', () => {
 
     mockedContactLinks.forEach((link) => {
       const renderedLink = screen.getByText(link.text);
+      console.log(link);
 
       expect(renderedLink).toHaveAttribute('href', link.href);
     });

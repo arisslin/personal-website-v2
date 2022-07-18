@@ -3,7 +3,7 @@ import ContactLink, {
   ContactLinkProps,
 } from '../../components/ContactLink/ContactLink';
 
-type ContactSectionProps = {
+export type ContactSectionProps = {
   links: ContactLinkProps[];
 };
 
@@ -16,6 +16,7 @@ const ContactSection = ({ links }: ContactSectionProps) => {
           key={'contact-link-' + index}
           text={link.text}
           href={link.href}
+          icon={link.icon}
         />
       ))}
     </section>

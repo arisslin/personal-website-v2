@@ -20,6 +20,14 @@ export default {
   },
 } as Meta;
 
+export const SkillSection: Story<SkillSectionProps> = (args) => (
+  <SkillSectionComponent tags={args.tags} />
+);
+
+SkillSection.args = {
+  tags: mockedSkillTags,
+};
+
 function getDescription(): string {
   return (
     '<h2>About</h2>' +
@@ -29,11 +37,3 @@ function getDescription(): string {
     '</p>'
   );
 }
-
-export const SkillSection: Story<SkillSectionProps> = (args) => (
-  <SkillSectionComponent tags={args.tags} />
-);
-
-SkillSection.args = {
-  tags: mockedSkillTags,
-};
