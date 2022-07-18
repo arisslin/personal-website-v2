@@ -5,7 +5,9 @@ import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
 import SkillSection from '../common/sections/SkillSection/SkillSection';
+import ContactSection from '../common/Sections/ContactSection/ContactSection';
 import { mockedSkillTags } from '../mocks/mockedSkillTags';
+import { mockedContactLinks } from '../mocks/mockedContactLinks';
 
 const IndexPage = () => {
   const imageSize = 300;
@@ -32,6 +34,7 @@ const IndexPage = () => {
           Tätigkeit als Entwickler.
         </p>
         <SkillSection tags={mockedSkillTags} />
+        <ContactSection links={mockedContactLinks} />
       </Home>
     </>
   );

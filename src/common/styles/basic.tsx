@@ -66,11 +66,15 @@ const GlobalBasicStyles = createGlobalStyle`
   }
 
   main {
-    padding-bottom: 1.75rem;
+    padding-bottom: 200px;
 
     @media screen and (min-width: ${breakpoints.medium}){
       padding-bottom: 2rem;
     }
+  }
+
+  section {
+    padding-top: 40px;
   }
 `;
 
