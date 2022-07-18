@@ -69,7 +69,7 @@ const GlobalBasicStyles = createGlobalStyle`
     padding-bottom: 200px;
 
     @media screen and (min-width: ${breakpoints.medium}){
-      padding-bottom: 2rem;
+      padding-bottom: 300px;
     }
   }
 
