@@ -13,16 +13,16 @@ const SkillSection = ({ tags }: SkillSectionProps) => {
   }
 
   return (
-    <SkillSectionStyled>
+    <Section>
       <h2>Skills</h2>
       {tags.map((tag, index) => (
         <SkillTag key={`skill-tag-${index}`} text={tag.text} />
       ))}
-    </SkillSectionStyled>
+    </Section>
   );
 };
 
-const SkillSectionStyled = styled.section`
+const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
