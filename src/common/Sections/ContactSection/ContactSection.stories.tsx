@@ -6,6 +6,11 @@ import { mockedContactLinks } from '../../../mocks/mockedContactLinks';
 export default {
   title: 'Sections/ContactSectionComponent',
   component: ContactSectionComponent,
+  argTypes: {
+    links: {
+      description: 'ContactLinks which get rendered inside the section.',
+    },
+  },
   parameters: {
     docs: {
       description: {
