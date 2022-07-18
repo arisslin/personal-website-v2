@@ -24,9 +24,15 @@ describe('ContactSection', () => {
 
     mockedContactLinks.forEach((link) => {
       const renderedLink = screen.getByText(link.text);
-      console.log(link);
 
       expect(renderedLink).toHaveAttribute('href', link.href);
+      expect(renderedLink.innerHTML).toContain(link.icon?.name);
     });
+  });
+
+  it('does not render if links are empty', () => {
+    render(<ContactSection links={[]} />);
+
+    expect(screen.queryByText('Kontakt')).not.toBeInTheDocument();
   });
 });

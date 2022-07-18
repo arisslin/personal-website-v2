@@ -8,6 +8,10 @@ export type ContactSectionProps = {
 };
 
 const ContactSection = ({ links }: ContactSectionProps) => {
+  if (links.length === 0) {
+    return <></>;
+  }
+
   return (
     <section>
       <h2>Kontakt</h2>
