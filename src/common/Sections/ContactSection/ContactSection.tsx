@@ -1,4 +1,5 @@
 import * as React from 'react';
+import styled from 'styled-components/macro';
 import ContactLink, {
   ContactLinkProps,
 } from '../../components/ContactLink/ContactLink';
@@ -13,7 +14,7 @@ const ContactSection = ({ links }: ContactSectionProps) => {
   }
 
   return (
-    <section>
+    <Section>
       <h2>Kontakt</h2>
       {links.map((link, index) => (
         <ContactLink
@@ -23,8 +24,21 @@ const ContactSection = ({ links }: ContactSectionProps) => {
           icon={link.icon}
         />
       ))}
-    </section>
+    </Section>
   );
 };
+
+const Section = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 300px;
+
+  a {
+    width: 100%;
+  }
+`;
 
 export default ContactSection;
