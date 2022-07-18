@@ -2,6 +2,7 @@ import * as React from 'react';
 import { cleanup, render, screen } from '@testing-library/react';
 import ContactSection from './ContactSection';
 import { mockedContactLinks } from '../../../mocks/mockedContactLinks';
+import { doSnapshotTest } from '../../helper/testHelper';
 
 describe('ContactSection', () => {
   const component = <ContactSection links={mockedContactLinks} />;
@@ -35,4 +36,6 @@ describe('ContactSection', () => {
 
     expect(screen.queryByText('Kontakt')).not.toBeInTheDocument();
   });
+
+  doSnapshotTest(component);
 });
