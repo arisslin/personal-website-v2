@@ -20,7 +20,7 @@ describe('SkillSection', () => {
     expect(renderedComponent.tagName).toBe('H2');
   });
 
-  it('it displays SkillTags', () => {
+  it('displays SkillTags', () => {
     render(component);
 
     mockedSkillTags.forEach((tag) => {
