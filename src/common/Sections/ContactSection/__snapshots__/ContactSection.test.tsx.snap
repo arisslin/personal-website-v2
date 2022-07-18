@@ -2,7 +2,9 @@
 
 exports[`ContactSection Snapshot test for ContactSection  1`] = `
 <div>
-  <section>
+  <section
+    class="ContactSection__Section-sc-r7ebyy-0 DpWcj"
+  >
     <h2>
       Kontakt
     </h2>
