@@ -13,7 +13,7 @@ const SkillSection = ({ tags }: SkillSectionProps) => {
   }
 
   return (
-    <Section className='layout-container'>
+    <Section>
       <h2>Skills</h2>
       {tags.map((tag, index) => (
         <SkillTag key={`skill-tag-${index}`} text={tag.text} />
@@ -27,8 +27,10 @@ const Section = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  max-width: calc(${breakpoints.medium} - 4rem);
+  max-width: calc(${breakpoints.medium} - 2rem);
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;
 
 export default SkillSection;

@@ -14,7 +14,7 @@ const ContactSection = ({ links }: ContactSectionProps) => {
   }
 
   return (
-    <Section className='layout-container'>
+    <Section>
       <h2>Kontakt</h2>
       {links.map((link, index) => (
         <ContactLink
@@ -34,7 +34,9 @@ const Section = styled.section`
   gap: 10px;
   justify-content: center;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: calc(300px + 2rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   a {
     width: 100%;
