@@ -3,7 +3,7 @@
 exports[`SkillSection Snapshot test for SkillSection  1`] = `
 <div>
   <section
-    class="SkillSection__Section-sc-cw10ze-0 ifurAI"
+    class="SkillSection__Section-sc-cw10ze-0 ifurAI layout-container"
   >
     <h2>
       Skills

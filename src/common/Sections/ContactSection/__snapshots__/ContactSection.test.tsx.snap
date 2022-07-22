@@ -3,7 +3,7 @@
 exports[`ContactSection Snapshot test for ContactSection  1`] = `
 <div>
   <section
-    class="ContactSection__Section-sc-1l4qjdg-0 fkRcyc"
+    class="ContactSection__Section-sc-1l4qjdg-0 fkRcyc layout-container"
   >
     <h2>
       Kontakt
