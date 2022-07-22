@@ -6,7 +6,7 @@ describe('Page', () => {
   it('renders with children', () => {
     const child = 'Test';
 
-    render(<Page>{child}</Page>);
+    const { container } = render(<Page>{child}</Page>);
 
     expect(screen.getByText(child)).toBeInTheDocument();
   });
