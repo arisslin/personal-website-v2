@@ -1,7 +1,8 @@
 import * as React from 'react';
+import Page from '../common/page/page';
 
 const NotFoundPage = () => {
-  return <main>404 page</main>;
+  return <Page title='404 - not found'>404 Page</Page>;
 };
 
 export default NotFoundPage;

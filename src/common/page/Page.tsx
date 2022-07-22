@@ -4,15 +4,16 @@ import { Helmet } from 'react-helmet';
 
 export type PageProps = {
   children: React.ReactNode;
+  title: string;
 };
 
-const Page = ({ children }: PageProps) => {
+const Page = ({ children, title }: PageProps) => {
   return (
     <>
       <GlobalStyles />
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Andreas Rissling</title>
+        <title>{title}</title>
       </Helmet>
       <main>{children}</main>
     </>
