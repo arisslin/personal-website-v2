@@ -13,7 +13,7 @@ const SkillSection = ({ tags }: SkillSectionProps) => {
   }
 
   return (
-    <Section>
+    <Section className='layout-container'>
       <h2>Skills</h2>
       {tags.map((tag, index) => (
         <SkillTag key={`skill-tag-${index}`} text={tag.text} />

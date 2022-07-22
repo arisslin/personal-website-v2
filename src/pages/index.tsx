@@ -15,36 +15,29 @@ const IndexPage = () => {
   const imageSize = 300;
 
   return (
-    <>
-      <GlobalStyles />
-      <Helmet>
-        <meta charSet='utf-8' />
-        <title>Andreas Rissling</title>
-      </Helmet>
-      <Page title='Home'>
-        <Title />
-        <Image>
-          <StaticImage
-            src='../assets/images/XING_Profilbild.jpg'
-            alt='Andreas Rissling'
-            width={imageSize}
-            height={imageSize}
-            quality={100}
-            className='home-page__title-image'
-          />
-        </Image>
+    <Page title='Home'>
+      <Title />
+      <Image className='layout-container'>
+        <StaticImage
+          src='../assets/images/XING_Profilbild.jpg'
+          alt='Andreas Rissling'
+          width={imageSize}
+          height={imageSize}
+          quality={100}
+          className='home-page__title-image'
+        />
+      </Image>
 
-        <p className='layout-container'>
-          Hallo, ich bin Andreas.
-          <br />
-          Web-Entwickler, Ingenieur für Medientechnik und Musik Produzent. Auf
-          dieser Webseite finden Sie einige Informationen über mich und meine
-          Tätigkeit als Entwickler.
-        </p>
-        <SkillSection tags={mockedSkillTags} />
-        <ContactSection links={mockedContactLinks} />
-      </Page>
-    </>
+      <p className='layout-container'>
+        Hallo, ich bin Andreas.
+        <br />
+        Web-Entwickler, Ingenieur für Medientechnik und Musik Produzent. Auf
+        dieser Webseite finden Sie einige Informationen über mich und meine
+        Tätigkeit als Entwickler.
+      </p>
+      <SkillSection tags={mockedSkillTags} />
+      <ContactSection links={mockedContactLinks} />
+    </Page>
   );
 };
 

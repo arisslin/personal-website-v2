@@ -14,7 +14,7 @@ const ContactSection = ({ links }: ContactSectionProps) => {
   }
 
   return (
-    <Section>
+    <Section className='layout-container'>
       <h2>Kontakt</h2>
       {links.map((link, index) => (
         <ContactLink
