@@ -1,12 +1,9 @@
 import * as React from 'react';
 import { IconType } from 'react-icons';
 import styled from 'styled-components/macro';
+import { Link } from '../../../types/dataTypes';
 
-export type ContactLinkProps = {
-  text: string;
-  href: string;
-  icon?: IconType;
-};
+export type ContactLinkProps = { text: string; icon?: IconType } & Link;
 
 const ContactLink = ({ text, href, icon }: ContactLinkProps) => (
   <Anchor href={href} rel='noreferrer' target='_blank'>

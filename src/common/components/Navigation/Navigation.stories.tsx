@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react';
-import NavigationComponent from './Navigation';
+import NavigationComponent, { NavigationProps } from './Navigation';
+import { mockedNavigationLinks } from '../../../mocks/mockedNavigationLinks';
 
 export default {
   title: 'Components/Navigation',
@@ -14,4 +15,9 @@ export default {
   },
 } as Meta;
 
-export const navigation: Story = () => <NavigationComponent />;
+export const navigation: Story<NavigationProps> = (args) => (
+  <NavigationComponent links={args.links} />
+);
+navigation.args = {
+  links: mockedNavigationLinks,
+};
