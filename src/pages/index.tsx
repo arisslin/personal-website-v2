@@ -45,6 +45,7 @@ const Image = styled.div`
     border-radius: 50%;
     margin: 60px auto;
     max-width: 260px;
+    z-index: 0;
 
     @media screen and (min-width: ${breakpoints.small}) {
       max-width: 300px;
