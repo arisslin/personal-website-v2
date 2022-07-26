@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { ContactLinkProps } from '../common/components/ContactLink/ContactLink';
 import { FaEnvelope, FaGithub, FaGlobe, FaXing } from 'react-icons/fa';
 
