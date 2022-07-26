@@ -1,9 +1,10 @@
+import { Link } from 'gatsby';
 import * as React from 'react';
 import styled from 'styled-components/macro';
-import { Link } from '../../../types/dataTypes';
+import { Link as LinkType } from '../../../types/dataTypes';
 
 export type NavigationProps = {
-  links: Link[];
+  links: LinkType[];
 };
 
 const Navigation = ({ links }: NavigationProps) => {
@@ -11,9 +12,13 @@ const Navigation = ({ links }: NavigationProps) => {
     <NavStyled data-testid={testId}>
       <div className='layout-container'>
         {links.map((link, index) => (
-          <a key={'nav-link-' + index} href={link.href}>
+          <Link
+            key={'nav-link-' + index}
+            to={link.href}
+            activeClassName='active'
+          >
             {link.text}
-          </a>
+          </Link>
         ))}
       </div>
     </NavStyled>
@@ -36,9 +41,14 @@ const NavStyled = styled.nav`
   a {
     display: flex;
     align-items: center;
-    margin-right: 16px;
+    padding: 0 8px;
     color: white;
     text-decoration: none;
+  }
+
+  a.active {
+    background: var(--color-light);
+    color: var(--color-dark);
   }
 `;
 
