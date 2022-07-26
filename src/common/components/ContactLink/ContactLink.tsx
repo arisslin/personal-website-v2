@@ -10,7 +10,7 @@ export type ContactLinkProps = {
 
 const ContactLink = ({ text, href, icon }: ContactLinkProps) => (
   <Anchor href={href} rel='noreferrer' target='_blank'>
-    {icon && icon({ title: icon.name })}
+    {icon && icon({})}
     {text}
   </Anchor>
 );

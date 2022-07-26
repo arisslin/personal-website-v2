@@ -29,19 +29,21 @@ describe('ContactLink', () => {
   });
 
   it('renders with an optional icon', () => {
-    render(component);
+    const { container } = render(component);
 
-    expect(screen.getByTitle(FaGlobe.name)).toBeInTheDocument();
+    expect(screen.getByText(text)).toBeInTheDocument();
+    expect(container.querySelector('svg')).toBeInTheDocument();
   });
 
   it('renders without an optional icon', () => {
-    render(component);
+    const { container } = render(componentWithoutIcon);
 
     expect(screen.getByText(text)).toBeInTheDocument();
+    expect(container.querySelector('svg')).not.toBeInTheDocument();
   });
 
   it('opens links in a new browser tab', () => {
-    render(componentWithoutIcon);
+    render(component);
 
     expect(screen.getByText(text).getAttribute('target')).toBe('_blank');
   });

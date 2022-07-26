@@ -1,12 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
-import { Helmet } from 'react-helmet';
-import GlobalStyles from '../common/styles';
+import Page from '../common/components/Page/page';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
 import SkillSection from '../common/sections/SkillSection/SkillSection';
-import ContactSection from '../common/Sections/ContactSection/ContactSection';
+import ContactSection from '../common/sections/ContactSection/ContactSection';
 import { mockedSkillTags } from '../mocks/mockedSkillTags';
 import { mockedContactLinks } from '../mocks/mockedContactLinks';
 
@@ -14,14 +13,9 @@ const IndexPage = () => {
   const imageSize = 300;
 
   return (
-    <>
-      <GlobalStyles />
-      <Helmet>
-        <meta charSet='utf-8' />
-        <title>Andreas Rissling</title>
-      </Helmet>
-      <Home className='layout-container'>
-        <Title />
+    <Page title='Home'>
+      <Title />
+      <Image className='layout-container'>
         <StaticImage
           src='../assets/images/XING_Profilbild.jpg'
           alt='Andreas Rissling'
@@ -30,22 +24,22 @@ const IndexPage = () => {
           quality={100}
           className='home-page__title-image'
         />
+      </Image>
 
-        <p>
-          Hallo, ich bin Andreas.
-          <br />
-          Web-Entwickler, Ingenieur für Medientechnik und Musik Produzent. Auf
-          dieser Webseite finden Sie einige Informationen über mich und meine
-          Tätigkeit als Entwickler.
-        </p>
-        <SkillSection tags={mockedSkillTags} />
-        <ContactSection links={mockedContactLinks} />
-      </Home>
-    </>
+      <p className='layout-container'>
+        Hallo, ich bin Andreas.
+        <br />
+        Web-Entwickler, Ingenieur für Medientechnik und Musik Produzent. Auf
+        dieser Webseite finden Sie einige Informationen über mich und meine
+        Tätigkeit als Entwickler.
+      </p>
+      <SkillSection tags={mockedSkillTags} />
+      <ContactSection links={mockedContactLinks} />
+    </Page>
   );
 };
 
-const Home = styled.main`
+const Image = styled.div`
   .home-page__title-image {
     display: block;
     border-radius: 50%;

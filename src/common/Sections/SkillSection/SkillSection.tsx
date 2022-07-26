@@ -27,8 +27,10 @@ const Section = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  max-width: calc(${breakpoints.medium} - 4rem);
+  max-width: calc(${breakpoints.medium} - 2rem);
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;
 
 export default SkillSection;
