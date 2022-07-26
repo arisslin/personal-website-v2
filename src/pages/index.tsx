@@ -1,8 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
-import { Helmet } from 'react-helmet';
-import GlobalStyles from '../common/styles';
-import Page from '../common/page/page';
+import Page from '../common/components/Page/page';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';

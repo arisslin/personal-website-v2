@@ -1,5 +1,5 @@
 import * as React from 'react';
-import GlobalStyles from '../../common/styles';
+import GlobalStyles from '../../styles';
 import { Helmet } from 'react-helmet';
 
 export type PageProps = {
