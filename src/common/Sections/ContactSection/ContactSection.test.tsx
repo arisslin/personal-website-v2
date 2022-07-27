@@ -27,7 +27,7 @@ describe('ContactSection', () => {
       const renderedLink = screen.getByText(link.text);
 
       expect(renderedLink).toHaveAttribute('href', link.href);
-      expect(renderedLink.innerHTML).toContain(link.icon?.name);
+      expect(renderedLink.querySelector('svg')).toBeInTheDocument();
     });
   });
 
