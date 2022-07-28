@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import Page from '../common/components/Page/page';
 
@@ -5,12 +6,15 @@ const AboutMePage = () => {
   return (
     <Page title='About me'>
       <h1>Über mich</h1>
-      <section className='layout-container'>
+      <article className='layout-container'>
+        <StaticImage
+          src='../assets/images/dj2.jpg'
+          alt='Andreas an den Turntables'
+          quality={100}
+        />
+
         <p>
           Moin, ich bin Andreas. <br />
-          <br />
-          Auf dieser Seite findet ihr einige Infos über mich und meine Tätigkeit
-          als Webentwickler und Musikproduzent.
         </p>
 
         <p>
@@ -43,7 +47,7 @@ const AboutMePage = () => {
           In meinem Job nach dem Studium habe ich dann nicht mehr programmieren
           müssen. Nebenbei probierte ich mich in Java und Python aus. Während
           meiner beruflichen Auszeit, fing ich dann an mich mit Webentwicklung
-          zu befassen. Für ein Hip-Hop Jam, die wir mit Freunden veranstalten
+          zu befassen. Für eine Hip-Hop Jam, die wir mit Freunden veranstalten
           wollten, brauchten wir eine Homepage. Etwas HTML, CSS und JavaScript
           kannte ich noch aus dem Studium und aus der Fachoberschule. Und da bin
           ich dann hängen geblieben. Das wollte ich machen! Nur Jobs bekam ich
@@ -57,9 +61,9 @@ const AboutMePage = () => {
           Scheiß aus den USA. In 12 Wochen sollte man lernen, wie man
           programmiert und danach findet man einen Job. Er war Konsultant und
           habe bei der Gründung beratend zur Seite gestanden. Er gab mir seine
-          Nummer. Wenn ich Interesse habe, solle ich mich melden. Er leitet
-          meinen CV weiter. Und so geschah es dann auch. Coden konnte ich ja
-          schon, ich brauchte nur ein Stück Papier, auf dem das auch steht.
+          Nummer. Wenn ich Interesse habe, solle ich mich melden und er würde
+          meinen CV weiterleiten. Und so geschah es dann auch. Coden konnte ich
+          ja schon, ich brauchte nur ein Stück Papier, auf dem das auch steht.
           Heute weiß ich, dass mir die Best Practices der Profis und das Wissen
           darüber, wie man in agilen Entwicklerteams arbeitet gefehlt haben.
         </p>
@@ -71,7 +75,7 @@ const AboutMePage = () => {
           Leidenschaft für das Programmieren miteinander verknüpfen. Außerdem
           lerne ich jeden Tag etwas Neues dazu und dafür bin ich dankbar.{' '}
         </p>
-      </section>
+      </article>
     </Page>
   );
 };
