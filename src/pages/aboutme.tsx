@@ -51,8 +51,8 @@ const AboutMePage = () => {
           In meinem Job nach dem Studium habe ich dann nicht mehr programmieren
           müssen. Nebenbei probierte ich mich in Java und Python aus. Während
           meiner beruflichen Auszeit, fing ich dann an mich mit Webentwicklung
-          zu befassen. Für eine Hip-Hop Jam, die wir mit Freunden veranstalten
-          wollten, brauchten wir eine Homepage. Etwas HTML, CSS und JavaScript
+          zu befassen. Für eine Hip-Hop Jam, die wir mit Freunden organisiert
+          haben, brauchten wir eine Homepage. Etwas HTML, CSS und JavaScript
           kannte ich noch aus dem Studium und aus der Fachoberschule. Und da bin
           ich dann hängen geblieben. Das wollte ich machen! Nur Jobs bekam ich
           keine. Zu wenig Erfahrung, keine Zertifikate, usw. Das übliche halt.
