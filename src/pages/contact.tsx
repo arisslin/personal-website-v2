@@ -6,6 +6,7 @@ import { mockedContactLinks } from '../mocks/mockedContactLinks';
 const ContactPage = () => (
   <Page title='Kontakt'>
     <h1>Kontakt</h1>
+
     <ContactSection links={mockedContactLinks} />
   </Page>
 );
