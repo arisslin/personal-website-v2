@@ -73,10 +73,6 @@ const GlobalBasicStyles = createGlobalStyle`
     }
   }
 
-  section {
-    padding-top: 40px;
-  }
-
   figcaption {
     font-size: ${fontSizesInRem.extraSmall}rem;
   }
