@@ -3,6 +3,8 @@ import styled from 'styled-components/macro';
 import { StaticImage } from 'gatsby-plugin-image';
 import Page from '../common/components/Page/page';
 import { breakpoints } from '../common/styles/layout';
+import SkillSection from '../common/sections/SkillSection/SkillSection';
+import { mockedSkillTags } from '../mocks/mockedSkillTags';
 
 const AboutMePage = () => {
   return (
@@ -78,6 +80,7 @@ const AboutMePage = () => {
           lerne ich jeden Tag etwas Neues dazu und dafür bin ich dankbar.{' '}
         </p>
       </ArticleOrigin>
+      <SkillSection tags={mockedSkillTags} />
     </Page>
   );
 };
