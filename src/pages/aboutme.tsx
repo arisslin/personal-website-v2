@@ -1,21 +1,15 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
+import styled from 'styled-components/macro';
+import { StaticImage } from 'gatsby-plugin-image';
 import Page from '../common/components/Page/page';
+import { breakpoints } from '../common/styles/layout';
 
 const AboutMePage = () => {
   return (
     <Page title='About me'>
       <h1>Über mich</h1>
-      <article className='layout-container'>
-        <StaticImage
-          src='../assets/images/dj2.jpg'
-          alt='Andreas an den Turntables'
-          quality={100}
-        />
-
-        <p>
-          Moin, ich bin Andreas. <br />
-        </p>
+      <ArticleOrigin className='layout-container'>
+        <p>Moin, ich bin Andreas.</p>
 
         <p>
           Eigentlich wollte ich nie programmieren da ich es damals tot
@@ -24,6 +18,13 @@ const AboutMePage = () => {
           auch meine Noten. Programmieren liegt mir nicht! Das war mein
           damaliger Glaubenssatz.
         </p>
+
+        <StaticImage
+          src='../assets/images/dj2.jpg'
+          alt='Andreas an den Turntables'
+          quality={100}
+          className='article-origin__top-image'
+        />
 
         <p>
           Das änderte sich jedoch während meines Medientechnikstudiums. Hier gab
@@ -75,9 +76,27 @@ const AboutMePage = () => {
           Leidenschaft für das Programmieren miteinander verknüpfen. Außerdem
           lerne ich jeden Tag etwas Neues dazu und dafür bin ich dankbar.{' '}
         </p>
-      </article>
+      </ArticleOrigin>
     </Page>
   );
 };
+
+const ArticleOrigin = styled.article`
+  .article-origin__top-image {
+    display: block;
+    grid-area: image;
+    margin: 2rem auto;
+    max-width: 300px;
+
+    @media screen and (min-width: ${breakpoints.small}) {
+      max-width: none;
+      width: 350px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 3rem auto;
+    }
+  }
+`;
 
 export default AboutMePage;
