@@ -18,13 +18,14 @@ const AboutMePage = () => {
           auch meine Noten. Programmieren liegt mir nicht! Das war mein
           damaliger Glaubenssatz.
         </p>
-
-        <StaticImage
-          src='../assets/images/dj2.jpg'
-          alt='Andreas an den Turntables'
-          quality={100}
-          className='article-origin__top-image'
-        />
+        <figure className='article-origin__top-image'>
+          <StaticImage
+            src='../assets/images/dj2.jpg'
+            alt='Andreas an den Turntables'
+            quality={80}
+          />
+          <figcaption>Image by Gavin Sense</figcaption>
+        </figure>
 
         <p>
           Das änderte sich jedoch während meines Medientechnikstudiums. Hier gab
