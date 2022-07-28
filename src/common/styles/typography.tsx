@@ -8,6 +8,8 @@ const rootFontSizeInRem = 1;
 
 export const fontSizesInRem = {
   root: rootFontSizeInRem,
+  extraSmall: 13 / fontSizeInPx,
+  small: 15 / fontSizeInPx,
   base: 17 / fontSizeInPx,
   large: 18 / fontSizeInPx,
   headingS: 20 / fontSizeInPx,

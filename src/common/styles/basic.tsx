@@ -27,7 +27,7 @@ const GlobalBasicStyles = createGlobalStyle`
   }
 
   h1 {
-    margin: 2rem 0;
+    margin: 3rem 0;
     font-size: ${fontSizesInRem.headingXl}rem;
   }
 
@@ -73,8 +73,8 @@ const GlobalBasicStyles = createGlobalStyle`
     }
   }
 
-  section {
-    padding-top: 40px;
+  figcaption {
+    font-size: ${fontSizesInRem.extraSmall}rem;
   }
 `;
 
