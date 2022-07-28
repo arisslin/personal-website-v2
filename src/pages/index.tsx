@@ -4,10 +4,6 @@ import Page from '../common/components/Page/page';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
-import SkillSection from '../common/sections/SkillSection/SkillSection';
-import ContactSection from '../common/sections/ContactSection/ContactSection';
-import { mockedSkillTags } from '../mocks/mockedSkillTags';
-import { mockedContactLinks } from '../mocks/mockedContactLinks';
 
 const IndexPage = () => {
   const imageSize = 300;
@@ -33,7 +29,6 @@ const IndexPage = () => {
         dieser Webseite finden Sie einige Informationen über mich und meine
         Tätigkeit als Entwickler.
       </p>
-      <ContactSection links={mockedContactLinks} />
     </Page>
   );
 };

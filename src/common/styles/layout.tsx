@@ -12,7 +12,8 @@ const maxContainerWidth = '1200px';
 
 const GlobalLayoutStyles = createGlobalStyle`
   .layout-container {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: ${maxContainerWidth};
     padding-left: 1rem;
     padding-right: 1rem;

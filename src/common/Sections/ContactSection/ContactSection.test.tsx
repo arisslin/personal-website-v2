@@ -11,15 +11,6 @@ describe('ContactSection', () => {
     cleanup();
   });
 
-  it('renders with a headline h2', () => {
-    render(component);
-
-    const renderedComponent = screen.getByText('Kontakt');
-
-    expect(renderedComponent).toBeInTheDocument();
-    expect(renderedComponent.tagName).toBe('H2');
-  });
-
   it('displays ContactLinks', () => {
     render(component);
 
@@ -32,9 +23,9 @@ describe('ContactSection', () => {
   });
 
   it('does not render if links are empty', () => {
-    render(<ContactSection links={[]} />);
+    const { container } = render(<ContactSection links={[]} />);
 
-    expect(screen.queryByText('Kontakt')).not.toBeInTheDocument();
+    expect(container.querySelector('section')).not.toBeInTheDocument();
   });
 
   doSnapshotTest(component);

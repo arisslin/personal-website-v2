@@ -5,9 +5,6 @@ exports[`ContactSection Snapshot test for ContactSection  1`] = `
   <section
     class="ContactSection__Section-sc-1l4qjdg-0 bpkqlA"
   >
-    <h2>
-      Kontakt
-    </h2>
     <a
       class="ContactLink__Anchor-sc-3i9vhf-0 cGJhOZ"
       href="https://www.gueteklasse-a.de"

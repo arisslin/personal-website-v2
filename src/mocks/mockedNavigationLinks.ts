@@ -6,4 +6,8 @@ export const mockedNavigationLinks: Link[] = [
     href: '/aboutme',
     text: 'Über mich',
   },
+  {
+    href: '/contact',
+    text: 'Kontakt',
+  },
 ];
