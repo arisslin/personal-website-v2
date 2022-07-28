@@ -15,7 +15,6 @@ const ContactSection = ({ links }: ContactSectionProps) => {
 
   return (
     <Section>
-      <h2>Kontakt</h2>
       {links.map((link, index) => (
         <ContactLink
           key={'contact-link-' + index}
