@@ -8,7 +8,7 @@ import { mockedSkillTags } from '../mocks/mockedSkillTags';
 
 const AboutMePage = () => {
   return (
-    <Page title='About me'>
+    <Page title='Über mich'>
       <h1>Über mich</h1>
       <ArticleOrigin className='layout-container'>
         <p>Moin, ich bin Andreas.</p>
