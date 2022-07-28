@@ -9,6 +9,7 @@ const GlobalBasicStyles = createGlobalStyle`
 
   body {
     margin: 0;
+    padding-top: 40px;
     background-color: var(--color-light);
     color: var(--color-dark);
     font-family: var(--font-family-global);
