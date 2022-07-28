@@ -33,7 +33,6 @@ const IndexPage = () => {
         dieser Webseite finden Sie einige Informationen über mich und meine
         Tätigkeit als Entwickler.
       </p>
-      <ContactSection links={mockedContactLinks} />
     </Page>
   );
 };
