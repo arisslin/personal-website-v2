@@ -46,6 +46,10 @@ const NavStyled = styled.nav`
     text-decoration: none;
   }
 
+  a:hover {
+    background-color: var(--color-primary-hover);
+  }
+
   a.active {
     background: var(--color-light);
     color: var(--color-dark);
