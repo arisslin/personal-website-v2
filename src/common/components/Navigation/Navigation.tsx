@@ -3,6 +3,7 @@ import * as React from 'react';
 import styled from 'styled-components/macro';
 import { Link as LinkType } from '../../../types/dataTypes';
 import { FaBars } from 'react-icons/fa';
+import { breakpoints } from '../../styles/layout';
 
 export type NavigationProps = {
   links: LinkType[];
@@ -54,10 +55,31 @@ const NavStyled = styled.nav<NavStyledProps>`
     height: 40px;
     color: var(--color-light);
     text-decoration: none;
+
+    @media screen and (min-width: ${breakpoints.medium}) {
+      float: left;
+    }
   }
 
   a:not(:first-child) {
     display: ${(props) => (props.isHidden ? 'none' : 'flex')};
+
+    @media screen and (min-width: ${breakpoints.medium}) {
+      display: flex;
+    }
+  }
+
+  a:hover {
+    @media screen and (min-width: ${breakpoints.medium}) {
+      background-color: var(--color-primary-hover);
+    }
+  }
+
+  a.active {
+    @media screen and (min-width: ${breakpoints.medium}) {
+      background: var(--color-light);
+      color: var(--color-dark);
+    }
   }
 
   .navigation__menu-icon {
@@ -69,20 +91,15 @@ const NavStyled = styled.nav<NavStyledProps>`
     padding: 0 8px;
     height: 40px;
     color: var(--color-light);
+
+    @media screen and (min-width: ${breakpoints.medium}) {
+      display: none;
+    }
   }
 
   .navigation__menu-icon:hover {
     cursor: pointer;
   }
-
-  /* a:hover {
-    background-color: var(--color-primary-hover);
-  } */
-
-  /* a.active {
-    background: var(--color-light);
-    color: var(--color-dark);
-  } */
 `;
 
 export const testId = 'navigation';
