@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import Navigation from './Navigation';
 import { mockedNavigationLinks } from '../../../mocks/mockedNavigationLinks';
 import { doSnapshotTest, fireClickEvent } from '../../helper/testHelper';
