@@ -13,7 +13,7 @@ const Navigation = ({ links }: NavigationProps) => {
   const [isHidden, setIsHidden] = React.useState(true);
 
   return (
-    <NavStyled data-testid={testId} isHidden={isHidden}>
+    <NavStyled isHidden={isHidden}>
       <div className='layout-container'>
         {links.map((link, index) => (
           <Link
@@ -101,7 +101,5 @@ const NavStyled = styled.nav<NavStyledProps>`
     cursor: pointer;
   }
 `;
-
-export const testId = 'navigation';
 
 export default Navigation;

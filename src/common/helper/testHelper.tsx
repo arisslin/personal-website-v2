@@ -1,4 +1,4 @@
-import { cleanup, render } from '@testing-library/react';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 
 /**
  * Does a snapshot test for component it got.
@@ -15,4 +15,20 @@ export function doSnapshotTest(component: JSX.Element, variant?: string): void {
     expect(container).toMatchSnapshot();
     cleanup();
   });
+}
+
+/**
+ * Fires an click event with 'fireEvent' from '@testing-library/react' on an
+ * element.
+ * @param {HTMLElement} element to fire click on.
+ * @param {boolean} bubbles attribute of 'MouseEvent'.
+ * @param {boolean} cancelable attribute of 'MouseEvent'.
+ * @return {void}
+ */
+export function fireClickEvent(
+  element: Element,
+  bubbles: boolean,
+  cancelable: boolean
+) {
+  fireEvent(element, new MouseEvent('click', { bubbles, cancelable }));
 }
