@@ -2,7 +2,7 @@ import * as React from 'react';
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import Navigation from './Navigation';
 import { mockedNavigationLinks } from '../../../mocks/mockedNavigationLinks';
-import { fireClickEvent } from '../../helper/testHelper';
+import { doSnapshotTest, fireClickEvent } from '../../helper/testHelper';
 
 describe('Navigation', () => {
   const component = <Navigation links={mockedNavigationLinks} />;
@@ -40,4 +40,6 @@ describe('Navigation', () => {
 
     expect(classNameBeforeClick).not.toBe(classNameAfterClick);
   });
+
+  doSnapshotTest(component);
 });
