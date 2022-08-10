@@ -11,10 +11,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: './src/assets/images',
+        name: 'assets',
+        path: './src/assets',
       },
-      __key: 'images',
+      __key: 'assets',
     },
     'gatsby-plugin-react-helmet',
     {
