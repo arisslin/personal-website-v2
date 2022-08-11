@@ -1,20 +1,20 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-type SiteMetadata = {
+type SiteMetaData = {
   description: string;
 };
 
-type SiteMetadataQuery = {
+type SiteMetaDataQuery = {
   site: {
-    siteMetadata: SiteMetadata;
+    siteMetadata: SiteMetaData;
   };
 };
 /**
  * Returns the site meta data by graphql
  * @returns {SiteMetadataQuery} site meta data
  */
-export const useSiteMetadata = (): SiteMetadata => {
-  const { site } = useStaticQuery<SiteMetadataQuery>(
+export const useSiteMetaData = (): SiteMetaData => {
+  const { site } = useStaticQuery<SiteMetaDataQuery>(
     graphql`
       query SiteMetaData {
         site {
