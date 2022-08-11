@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import Page from './Page';
+import Layout from './Layout';
 
-describe('Page', () => {
+describe('Layout', () => {
   const child = 'Test';
   const title = 'Andreas Rissling';
 
-  const component = <Page title={title}>{child}</Page>;
+  const component = <Layout title={title}>{child}</Layout>;
 
   it('renders with children', () => {
     render(component);

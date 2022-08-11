@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet';
 import Navigation from '../Navigation/Navigation';
 import { mockedNavigationLinks } from '../../../mocks/mockedNavigationLinks';
 
-export type PageProps = {
+export type LayoutProps = {
   children: React.ReactNode;
   title: string;
 };
 
-const Page = ({ children, title }: PageProps) => {
+const Layout = ({ children, title }: LayoutProps) => {
   return (
     <>
       <GlobalStyles />
@@ -23,4 +23,4 @@ const Page = ({ children, title }: PageProps) => {
   );
 };
 
-export default Page;
+export default Layout;
