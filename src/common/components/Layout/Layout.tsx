@@ -3,18 +3,22 @@ import GlobalStyles from '../../styles';
 import { Helmet } from 'react-helmet';
 import Navigation from '../Navigation/Navigation';
 import { mockedNavigationLinks } from '../../../mocks/mockedNavigationLinks';
+import { useSiteMetaData } from '../../hooks/queryHooks';
 
-export type PageProps = {
+export type LayoutProps = {
   children: React.ReactNode;
   title: string;
 };
 
-const Page = ({ children, title }: PageProps) => {
+const Layout = ({ children, title }: LayoutProps) => {
+  const { description } = useSiteMetaData();
+
   return (
     <>
       <GlobalStyles />
       <Helmet>
         <meta charSet='utf-8' />
+        <meta name='description' content={description} />
         <title>{title}</title>
       </Helmet>
       <Navigation links={mockedNavigationLinks} />
@@ -23,4 +27,4 @@ const Page = ({ children, title }: PageProps) => {
   );
 };
 
-export default Page;
+export default Layout;

@@ -1,12 +1,18 @@
 import * as React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import Page from './Page';
+import Layout from './Layout';
+import { mockQuerySiteMetaData } from '../../../mocks/mockedQueriesForJest';
 
-describe('Page', () => {
+describe('Layout', () => {
+  mockQuerySiteMetaData();
+
   const child = 'Test';
   const title = 'Andreas Rissling';
+  const component = <Layout title={title}>{child}</Layout>;
 
-  const component = <Page title={title}>{child}</Page>;
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
 
   it('renders with children', () => {
     render(component);

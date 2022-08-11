@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Page from '../common/components/Page/page';
+import Layout from '../common/components/Layout/Layout';
 
 const NotFoundPage = () => {
-  return <Page title='404 - not found'>404 Page</Page>;
+  return <Layout title='404 - not found'>404 Page</Layout>;
 };
 
 export default NotFoundPage;

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Andreas Rissling',
-    siteUrl: `https://www.gueteklasse-a.de`,
+    description: 'This is the personal webiste of Andreas Rissling.',
+    siteUrl: 'https://www.gueteklasse-a.de',
+    title: 'Güteklasse A',
   },
   plugins: [
     'gatsby-plugin-styled-components',

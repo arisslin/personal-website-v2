@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
-import Page from '../common/components/Page/page';
+import Layout from '../common/components/Layout/Layout';
 import Title from '../common/components/Title/Title';
 import { StaticImage } from 'gatsby-plugin-image';
 import { breakpoints } from '../common/styles/layout';
@@ -9,7 +9,7 @@ const IndexPage = () => {
   const imageSize = 300;
 
   return (
-    <Page title='Home'>
+    <Layout title='Home'>
       <Title />
       <Image className='layout-container'>
         <StaticImage
@@ -29,7 +29,7 @@ const IndexPage = () => {
         dieser Webseite finden Sie einige Informationen über mich und meine
         Tätigkeit als Entwickler.
       </p>
-    </Page>
+    </Layout>
   );
 };
 

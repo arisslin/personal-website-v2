@@ -1,13 +1,13 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
 import { StaticImage } from 'gatsby-plugin-image';
-import Page from '../common/components/Page/page';
+import Layout from '../common/components/Layout/Layout';
 import { breakpoints } from '../common/styles/layout';
 import SkillSection from '../common/sections/SkillSection/SkillSection';
 import { mockedSkillTags } from '../mocks/mockedSkillTags';
 
 const AboutMePage = () => (
-  <Page title='Über mich'>
+  <Layout title='Über mich'>
     <h1>Über mich</h1>
     <ArticleOrigin className='layout-container'>
       <p>Moin, ich bin Andreas.</p>
@@ -78,7 +78,7 @@ const AboutMePage = () => (
       </p>
     </ArticleOrigin>
     <SkillSection tags={mockedSkillTags} />
-  </Page>
+  </Layout>
 );
 
 const ArticleOrigin = styled.article`
