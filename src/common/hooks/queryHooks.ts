@@ -4,14 +4,17 @@ type SiteMetadata = {
   description: string;
 };
 
-type SiteMetadataQueryProps = {
+type SiteMetadataQuery = {
   site: {
     siteMetadata: SiteMetadata;
   };
 };
-
+/**
+ * Returns the site meta data by graphql
+ * @returns {SiteMetadataQuery} site meta data
+ */
 export const useSiteMetadata = (): SiteMetadata => {
-  const { site } = useStaticQuery<SiteMetadataQueryProps>(
+  const { site } = useStaticQuery<SiteMetadataQuery>(
     graphql`
       query SiteMetaData {
         site {
